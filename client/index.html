@@ -1,13 +1,35 @@
-<canvas id="ctx" width="500" height="500" style="border:1px solid #000000;"></canvas>
+<html>
+<head>
+	<style type="text/css">
+		#myGame{
+			width: 75%;
+			height: 75%;
+    		border:2px solid;
+    		margin: 0px auto;
+    		/*margin-top: 10% ;*/
+    		background: url('http://localhost:2000/client/img/qwerty.png');
+		}
+	</style>
+</head>
+<body>
+<h1>MATH Battle</h1>
+<div id=myGame>
+	<input type="number" name="answer" placeholder="Enter answer">
+	<button>Answer</button>
+</div>
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 <script>
-   var ctx = document.getElementById("ctx").getContext("2d");
-   ctx.font = '30px Arial';
-   var socket = io();
-   socket.on('newPositions',function(data){
-   	ctx.clearRect(0,0,500,500);
-   	for(var i=0;i<data.length; i++)
-   		ctx.fillText(data[i].number,data[i].x,data[i].y);
-   });
+   // var ctx = document.getElementById("ctx").getContext("2d");
+   // ctx.font = '30px Arial';
+   // var img = document.getElementById("scream");
+   // ctx.drawImage(img, 2, 2);
+   // var socket = io();
+   // socket.on('newPositions',function(data){
+   // 	ctx.clearRect(0,0,1000,500);
+   // 	for(var i=0;i<data.length; i++)
+   // 		ctx.fillText(data[i].number,data[i].x,data[i].y);
+   // });
 </script>
+</body>
+</html>
