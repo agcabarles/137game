@@ -23,16 +23,6 @@ img {vertical-align: middle;}
 	opacity: 0.4;
 	font: 700 50px 'Bitter';
 }
-.yowyow1 {
-  margin: 18px auto;
-  text-align: center;
-  text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
-  color: white;
-  opacity: 0.4;
-  font: 700 35px 'Bitter';
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -96,7 +86,7 @@ img {vertical-align: middle;}
   font-size:30px;
   text-decoration:none;
   margin:20px auto;
-  transition: color 0.4s;
+  transition: color 0.4s
 }
 .fancy-btn:after{
   content:" ";
@@ -247,47 +237,36 @@ input[type=text]{
   color: black;
   font: 700 25px 'Bitter';
 }
-#show_2{
+.show_2{
 	display: none;
 }
-#show_3{
-  display: none;
-}
-#show_4{
-  display: none;
-}
- #extension1{
-      font-family:'Dancing Script',serif;
-      font-size:30px;
-      color: white;
-    }
 
 	</style>
 </head>
 <body>
 <div id="myGame">
-<div id="show_1">
+<div class="show_1">
 <div><h1 class="yowyow">MATH BATTLE</h1></div>
 <div class="slideshow-container">
 
 <div class="mySlides">
   <img src="http://localhost:2000/client/img/level1.gif" class="center levels" style="width:50%">
   <div style="text-align: center;">
-  <a class="fancy-btn" id="level1">Accept Challenge</a>
+  <a href="http://localhost:2000/client/level1.html" class="fancy-btn" target="_self">Accept Challenge</a>
   </div>
 </div>
 
 <div class="mySlides">
   <img src="http://localhost:2000/client/img/level2.gif" class="center levels" style="width:50%">
    <div style="text-align: center;">
-  <a class="fancy-btn" id="level2">Accept Challenge</a>
+  <a href="http://localhost:2000/client/level2.html" class="fancy-btn" target="_self">Accept Challenge</a>
   </div>
 </div>
 
 <div class="mySlides">
   <img src="http://localhost:2000/client/img/level3.gif" class="center levels" style="width:50%">
   <div style="text-align: center;">
-  <a class="fancy-btn" id="level3">Accept Challenge</a>
+  <a href="http://localhost:2000/client/level3.html" class="fancy-btn" target="_self">Accept Challenge</a>
   </div>
 </div>
 
@@ -296,7 +275,7 @@ input[type=text]{
 
 </div>
 </div>
-<div id="show_2">
+<div class="show_2">
 	<div><h1 class="heyhey">MATH<span id=extension>DALI</span></h1></div>
 <div class="transbox">
 <h2 id="instructions">Simple calculations of two digit numbers. Operations included are Addition, Subtraction and Multiplication.</h2>
@@ -309,8 +288,8 @@ input[type=text]{
 <div class=solve>
 <div class="shadow center"><h2 id="problem" class="center">Solve this Problem!</h2></div>
 <form id="game">
-  <input type="text" id="answer" placeholder="Enter answer">
-  <input type="submit" value="Answer" id="submit_ans">
+  <input type="text" name="answer" placeholder="Enter answer">
+  <input type="submit" value="Answer" >
 </form>
 </div>
 <div class="leaderboard center" >
@@ -327,87 +306,11 @@ input[type=text]{
 </div>
 </div>
 </div>
-<div id="show_3">
-  <div><h1 class="yowyow">MATH<span id=extension>IRAP</span></h1></div>
-<div class="transbox">
-<h2 id="instructions">Calculations of two digit numbers with PEMDAS.Operations included are Addition, Subtraction, and Multiplication.</h2>
-</div>
-<div class="details">
-<h2 class="question">Player:<span id="playerName"></span></h2>
-<h2 class="question">Score:<span id="score">0</span></h2>
-<h2 class="question">Remaining Questions:<span id="questions">10</span></h2>
-</div>
-<div class=solve>
-<div class="shadow center"><h2 id="problem" class="center">Solve this Problem!</h2></div>
-<form id="game">
-  <input type="text" id="answer" placeholder="Enter answer">
-  <input type="submit" value="Answer" id="submit_ans">
-</form>
-</div>
-<div class="leaderboard center" >
-  <h2 id="leadtitle">Leaderboard</h2>
-  <hr>
-  <div class="flowflow">
-  <table id="lead">
-              <tr id="headers">
-                <td id="rank_header">RANK</td>
-                <td id="player_header">PLAYER</td>   
-                <td id="score_header">SCORE</td>
-              </tr>
-  </table>
-</div>
-</div>
-</div>
-<div id="show_4">
-  <div><h1 class="yowyow1">MATH<span id=extension1>IRA</span> MATH<span id=extension1>IBAY</span></h1></div>
-<div class="transbox">
-<h2 id="instructions">Calculations of two digits with the given number of set of questions. The one with the lowest score after answering the set of questions will be out from the game. Operations included are Addition, Subtraction, and Multiplication.</h2>
-</div>
-<div class="details">
-<h2 class="question">Player:<span id="playerName"></span></h2>
-<h2 class="question">Score:<span id="score">0</span></h2>
-<h2 class="question">Remaining Sets:<span id="setsques">0</span></h2>
-</div>
-<div class=solve>
-<div class="shadow center"><h2 id="problem" class="center">Solve this Problem!</h2></div>
-<form id="game">
-  <input type="text" id="answer" placeholder="Enter answer">
-  <input type="submit" value="Answer" id="submit_ans">
-</form>
-</div>
-<div class="leaderboard center" >
-  <h2 id="leadtitle">Leaderboard</h2>
-  <hr>
-  <div class="flowflow">
-  <table id="lead">
-              <tr id="headers">
-                <td id="rank_header">RANK</td>
-                <td id="player_header">PLAYER</td>   
-                <td id="score_header">SCORE</td>
-              </tr>
-  </table>
-</div>
-</div>
-  
-</div>
-
 </div>
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 <script>
-  document.getElementById("level1").addEventListener("click", function(){
-    document.getElementById("show_2").style.display="inline";
-    document.getElementById("show_1").style.display="none";
-});
-  document.getElementById("level2").addEventListener("click", function(){
-    document.getElementById("show_3").style.display="inline";
-    document.getElementById("show_1").style.display="none";
-});
-  document.getElementById("level3").addEventListener("click", function(){
-    document.getElementById("show_4").style.display="inline";
-    document.getElementById("show_1").style.display="none";
-});
 	var slideIndex = 1;
 showSlides(slideIndex);
 
