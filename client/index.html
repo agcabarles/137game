@@ -15,13 +15,23 @@ img {vertical-align: middle;}
   margin: auto;
   margin-top:10px; 
 }
-h1 {
+.yowyow {
 	margin: 18px auto;
 	text-align: center;
 	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
 	color: white;
 	opacity: 0.4;
 	font: 700 50px 'Bitter';
+}
+.yowyow1 {
+  margin: 18px auto;
+  text-align: center;
+  text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+  color: white;
+  opacity: 0.4;
+  font: 700 35px 'Bitter';
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 /* Next & previous buttons */
@@ -86,7 +96,7 @@ h1 {
   font-size:30px;
   text-decoration:none;
   margin:20px auto;
-  transition: color 0.4s
+  transition: color 0.4s;
 }
 .fancy-btn:after{
   content:" ";
@@ -110,32 +120,174 @@ h1 {
   width: calc(100% - 10px);
   height: calc(100% + 10px); 
 }
+.heyhey {
+  margin: 18px auto;
+  text-align: center;
+  text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+  color: white;
+  opacity: 0.4;
+  font: 700 50px 'Bitter';
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+    #myGame{
+      width: 400px;
+      height: 700px;
+        border:2px solid;
+        margin: 0px auto;
+        background-color: black;
+    }
+    #extension{
+      font-family:'Dancing Script',serif;
+      font-size:45px;
+      color: white;
+    }
+  .shadow {
+    color:black;
+    background-color:white; 
+    width: 350px;
+    height:150px;
+    border: 3px solid grey;
+    padding: 10px;
+    border-radius: 50px 20px;
+    transition: width height 2s;
+    margin-bottom: 15px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#problem{
+  text-align: center;
+  font-family:'Verdana',serif;
+  font-style: italic;
+  font-size: 30px;
+}
+#instructions{
+  text-align: center;
+  font-family:'Dancing Script',serif;
+  font-size: 13px;
+  color: black;
+}
+.transbox {
+  margin: 0px auto;
+  background-color: #ffffff;
+  opacity: 0.6;
+  width: 396px;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+.shadow:hover {
+  width: 352px;
+  height:152px;
+}
+.question{
+  margin: 0px auto;
+  color: white;
+  font-size: 20px;
+  float: left;
+  margin-right: 100px;
+  margin-left: 5px;
+  font-family:'Dancing Script',serif;
+  font-style: italic;
+}
+.details{
+  margin: 0px auto;
+  padding-bottom: 50px;
+}
+#game{
+  text-align: center;
+}
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 7px;
+  border: 3px solid grey;
+  cursor: pointer;
+  font-weight: bold;
+  font-family:'Dancing Script',serif;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+input[type=text]{
+  width: 250px;
+  padding: 12px;
+  border: 3px solid grey;
+  border-radius: 7px;
+  resize: vertical;
+}
+.leaderboard{
+  height:265px;
+  width: 380px;
+  background-color:grey; 
+  border-radius: 5px;
+
+}
+.flowflow{
+  overflow:auto;
+}
+.solve{
+  margin-bottom: 15px;
+}
+
+#headers td{
+    font-weight: bold;
+    text-align: center;
+    width: 10%;
+    font-family:'Dancing Script',serif;
+}
+#leadtitle{
+  padding-top: 10px;
+   margin: 18px auto;
+  text-align: center;
+  text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+  color: black;
+  font: 700 25px 'Bitter';
+}
+#show_2{
+	display: none;
+}
+#show_3{
+  display: none;
+}
+#show_4{
+  display: none;
+}
+ #extension1{
+      font-family:'Dancing Script',serif;
+      font-size:30px;
+      color: white;
+    }
 
 	</style>
 </head>
 <body>
 <div id="myGame">
-<div><h1>MATH BATTLE</h1></div>
+<div id="show_1">
+<div><h1 class="yowyow">MATH BATTLE</h1></div>
 <div class="slideshow-container">
 
 <div class="mySlides">
   <img src="http://localhost:2000/client/img/level1.gif" class="center levels" style="width:50%">
   <div style="text-align: center;">
-  <a href="http://localhost:2000/client/level1.html" class="fancy-btn" target="_self">Accept Challenge</a>
+  <a class="fancy-btn" id="level1">Accept Challenge</a>
   </div>
 </div>
 
 <div class="mySlides">
   <img src="http://localhost:2000/client/img/level2.gif" class="center levels" style="width:50%">
    <div style="text-align: center;">
-  <a href="http://localhost:2000/client/level2.html" class="fancy-btn" target="_self">Accept Challenge</a>
+  <a class="fancy-btn" id="level2">Accept Challenge</a>
   </div>
 </div>
 
 <div class="mySlides">
   <img src="http://localhost:2000/client/img/level3.gif" class="center levels" style="width:50%">
   <div style="text-align: center;">
-  <a href="http://localhost:2000/client/level3.html" class="fancy-btn" target="_self">Accept Challenge</a>
+  <a class="fancy-btn" id="level3">Accept Challenge</a>
   </div>
 </div>
 
@@ -144,10 +296,118 @@ h1 {
 
 </div>
 </div>
+<div id="show_2">
+	<div><h1 class="heyhey">MATH<span id=extension>DALI</span></h1></div>
+<div class="transbox">
+<h2 id="instructions">Simple calculations of two digit numbers. Operations included are Addition, Subtraction and Multiplication.</h2>
+</div>
+<div class="details">
+<h2 class="question">Player:<span id="playerName"></span></h2>
+<h2 class="question">Score:<span id="score">0</span></h2>
+<h2 class="question">Remaining Questions:<span id="questions">10</span></h2>
+</div>
+<div class=solve>
+<div class="shadow center"><h2 id="problem" class="center">Solve this Problem!</h2></div>
+<form id="game">
+  <input type="text" name="answer" placeholder="Enter answer">
+  <input type="submit" value="Answer" >
+</form>
+</div>
+<div class="leaderboard center" >
+  <h2 id="leadtitle">Leaderboard</h2>
+  <hr>
+  <div class="flowflow">
+  <table id="lead">
+              <tr id="headers">
+                <td id="rank_header">RANK</td>
+                <td id="player_header">PLAYER</td>   
+                <td id="score_header">SCORE</td>
+              </tr>
+  </table>
+</div>
+</div>
+</div>
+<div id="show_3">
+  <div><h1 class="yowyow">MATH<span id=extension>IRAP</span></h1></div>
+<div class="transbox">
+<h2 id="instructions">Calculations of two digit numbers with PEMDAS.Operations included are Addition, Subtraction, and Multiplication.</h2>
+</div>
+<div class="details">
+<h2 class="question">Player:<span id="playerName"></span></h2>
+<h2 class="question">Score:<span id="score">0</span></h2>
+<h2 class="question">Remaining Questions:<span id="questions">10</span></h2>
+</div>
+<div class=solve>
+<div class="shadow center"><h2 id="problem" class="center">Solve this Problem!</h2></div>
+<form id="game">
+  <input type="text" name="answer" placeholder="Enter answer">
+  <input type="submit" value="Answer" >
+</form>
+</div>
+<div class="leaderboard center" >
+  <h2 id="leadtitle">Leaderboard</h2>
+  <hr>
+  <div class="flowflow">
+  <table id="lead">
+              <tr id="headers">
+                <td id="rank_header">RANK</td>
+                <td id="player_header">PLAYER</td>   
+                <td id="score_header">SCORE</td>
+              </tr>
+  </table>
+</div>
+</div>
+</div>
+<div id="show_4">
+  <div><h1 class="yowyow1">MATH<span id=extension1>IRA</span> MATH<span id=extension1>IBAY</span></h1></div>
+<div class="transbox">
+<h2 id="instructions">Calculations of two digits with the given number of set of questions. The one with the lowest score after answering the set of questions will be out from the game. Operations included are Addition, Subtraction, and Multiplication.</h2>
+</div>
+<div class="details">
+<h2 class="question">Player:<span id="playerName"></span></h2>
+<h2 class="question">Score:<span id="score">0</span></h2>
+<h2 class="question">Remaining Sets:<span id="setsques">0</span></h2>
+</div>
+<div class=solve>
+<div class="shadow center"><h2 id="problem" class="center">Solve this Problem!</h2></div>
+<form id="game">
+  <input type="text" name="answer" placeholder="Enter answer">
+  <input type="submit" value="Answer" >
+</form>
+</div>
+<div class="leaderboard center" >
+  <h2 id="leadtitle">Leaderboard</h2>
+  <hr>
+  <div class="flowflow">
+  <table id="lead">
+              <tr id="headers">
+                <td id="rank_header">RANK</td>
+                <td id="player_header">PLAYER</td>   
+                <td id="score_header">SCORE</td>
+              </tr>
+  </table>
+</div>
+</div>
+  
+</div>
+
+</div>
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 <script>
+  document.getElementById("level1").addEventListener("click", function(){
+    document.getElementById("show_2").style.display="inline";
+    document.getElementById("show_1").style.display="none";
+});
+  document.getElementById("level2").addEventListener("click", function(){
+    document.getElementById("show_3").style.display="inline";
+    document.getElementById("show_1").style.display="none";
+});
+  document.getElementById("level3").addEventListener("click", function(){
+    document.getElementById("show_4").style.display="inline";
+    document.getElementById("show_1").style.display="none";
+});
 	var slideIndex = 1;
 showSlides(slideIndex);
 
